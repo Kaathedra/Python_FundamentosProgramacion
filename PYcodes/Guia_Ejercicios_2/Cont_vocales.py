@@ -5,4 +5,4 @@ for letra in frase:
     if letra in vocales:
         cont_vocales += 1
 
-print(f"la frase {frase} tiene {cont_vocales} vocales.")
+print(f"la frase '{frase}' tiene {cont_vocales} vocales.")
