@@ -6,3 +6,7 @@
 # DENTRO DE ESTAS. PODEMOS VOLVER AL NIVEL BASICO QUE TENIAMOS ANTES SIN ANIDAR TANTOS IF
 # ====== CONFIO EN QUE EN UN MEJOR ESTADO COGNITIVO LO HARAS BIEN =======
 # NO DEPENDAS TANTO DE LA IA PRIMERO ARMA ALGO TU MISMO Y PREGUNTA QUE ESTA FALLANDO
+
+
+# No lo hiciste, pero si has retomado el ritmo, en algun momento te sentiras seguro de seguir con esto
+# Hoy tuviste una revelacion en el uso del while tru y wl try except
