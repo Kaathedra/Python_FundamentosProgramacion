@@ -7,19 +7,21 @@ es_cliente = str(input("Es cliente nuevo? (s/n): ".strip().lower()))
 
 estrato_client = int(input("Ingrese su estrato (1-6): ".strip().lower()))
 
-if zona == "rural" and es_cliente == "s":
-    PLAN_DUO = PLAN_DUO * 0.80
-elif zona== "rural" and es_cliente == "n":
-    PLAN_DUO = PLAN_DUO * 0.90
-elif zona == "urbana" and estrato_client == 1 or 2:
-    PLAN_DUO = PLAN_DUO * 0.85
+if zona == "rural":
+    if es_cliente == "s":
+        PLAN_DUO = PLAN_DUO * 0.8
+    else:
+        PLAN_DUO = PLAN_DUO * 0.9
+    if 1>=estrato_client <= 2:
+        INSTALACION = INSTALACION * 0.5
+    else:
+        INSTALACION
+elif zona == "urbana":
+    if 1 >= estrato_client <= 2:
+        PLAN_DUO = PLAN_DUO * 0.85
+    else:
+        PLAN_DUO = PLAN_DUO * 0.95
     INSTALACION = 0
-elif zona == "urbana" and estrato_client == 3 or 4 or 5 or 6:
-    PLAN_DUO = PLAN_DUO * 0.95
-    INSTALACION = 0
-elif zona == "rural" and estrato_client == 1 or 2:
-    INSTALACION = INSTALACION * 0.5
-
 
 print(f""" 
     -------------------------
