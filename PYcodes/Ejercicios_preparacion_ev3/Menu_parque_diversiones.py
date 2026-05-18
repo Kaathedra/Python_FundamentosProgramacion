@@ -18,14 +18,14 @@ for i in range(cant_personas):
             edad = int(input("Ingrese la edad: "))
             if edad < 0:
                 print("La edad no puede ser negativa")
-                continue
-            if edad < 18:
+            elif edad < 18:
                 print("Ingreso denegado")
                 ingreso_denegado += 1
+                break
             else:
                 print("Ingreso permitido")
                 ingreso_permitido += 1
-            break
+                break
         except ValueError:
             print("Ingrese una edad valida")
 

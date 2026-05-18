@@ -11,15 +11,17 @@ def menu():
 votante_list = []
 
 def reg_votante():
-    try:
-        edad = int(input("Ingrese la edad del votante: "))
-        if 18 <= edad <= 100:
-            print("Votante registrado con exito")
-            votante_list.append(edad)
-        else:
-            print("Edad no permitida para votar")
-    except ValueError:
-        print("Ingrese un numero entero")
+    while True:
+        try:
+            edad = int(input("Ingrese la edad del votante: "))
+            if 18 <= edad <= 100:
+                print("Votante registrado con exito")
+                votante_list.append(edad)
+                break
+            else:
+                print("Edad no permitida para votar")
+        except ValueError:
+            print("Ingrese un numero entero")
 
 os.system("cls")
 
