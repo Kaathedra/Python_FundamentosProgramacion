@@ -33,7 +33,7 @@ while True:
             print(f"\nCantidad de votantes: {len(votante_list)}")
         elif opcion_menu == 3:
             if len(votante_list) > 0:
-                print(f"\nVotante mas jven: {min(votante_list)} años.")
+                print(f"\nVotante mas jóven: {min(votante_list)} años.")
             else:
                 print("\nNo se han registrado votantes aun.")
         elif opcion_menu == 4:
