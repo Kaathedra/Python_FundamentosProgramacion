@@ -12,7 +12,7 @@ def es_primo(numero):
 while True:
     try:
         cant_num = int(input("Ingresa la cantidad de numeros a verificar: "))
-        if type(cant_num) == int:
+        if cant_num > 0:
             break
     except ValueError:
         print("Error: Ingresa solo numeros enteros.")
