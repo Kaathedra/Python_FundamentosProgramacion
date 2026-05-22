@@ -46,6 +46,8 @@ while True:
                             entradas_compradas -= devolver_ticket
                             entradas_devueltas += devolver_ticket
                             print(f"\n{devolver_ticket} entradas devueltas con exito.")
+                        elif devolver_ticket == 0:
+                            break
                         else:
                             print(f"Error: No puedes devolver mas entradas de las que ha comprado {entradas_compradas}")
                     else:
