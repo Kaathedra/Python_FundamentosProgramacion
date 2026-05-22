@@ -14,6 +14,8 @@ while True:
         cant_num = int(input("Ingresa la cantidad de numeros a verificar: "))
         if cant_num > 0:
             break
+        else:
+            print("Error: Ingresa un numero entero positivo.")
     except ValueError:
         print("Error: Ingresa solo numeros enteros.")
 
