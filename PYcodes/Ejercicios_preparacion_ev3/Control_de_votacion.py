@@ -20,6 +20,7 @@ def reg_votante():
                 break
             else:
                 print("Edad no permitida para votar")
+                break
         except ValueError:
             print("Ingrese un numero entero")
 
