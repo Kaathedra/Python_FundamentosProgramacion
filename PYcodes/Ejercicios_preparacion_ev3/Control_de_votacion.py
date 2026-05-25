@@ -19,8 +19,12 @@ def reg_votante():
                 votante_list.append(edad)
                 break
             else:
+<<<<<<< HEAD
                 print("Edad no permitida para votar")
                 break
+=======
+                print("edad no permitida para votar")
+>>>>>>> 37546b57b1fd9a698e8b7d5a69719485bc3afcf7
         except ValueError:
             print("Ingrese un numero entero")
 
