@@ -25,8 +25,9 @@ while True:
         while True:
             try:
                 reg_temp = float(input("Ingrese la temperatura a registrar: "))
-                if reg_temp > 0:
+                if reg_temp >= -273.15:
                     temperaturas.append(reg_temp)
+                    print("Lectura guardada correctamente")
                     break
                 else:
                     print("Error: ingresa un numero real positivo")
