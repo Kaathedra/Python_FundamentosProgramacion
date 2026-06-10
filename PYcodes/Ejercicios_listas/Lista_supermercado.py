@@ -49,3 +49,16 @@ for i in range(len(lista_productos)):
 
 # Falta terminar BOLETA y verificar si aplica descuento #
 
+print("{:^60}".format("=== BOLETA ==="))
+print("{:<15} {:<10} {:<18} {:<15}".format("Producto", "Cantidad", "Precio unitario", "Total"))
+print("-" * 60)
+
+for i in range(len(lista_productos)):
+    print("{:<15} {:<10} ${:<17} ${:<15}".format(lista_productos[i], lista_cantidades[i], lista_precios[i], lista_totales[i]))
+
+print("-" * 60)
+print(f"Subtotal: ${sum(lista_totales)}")
+
+if sum(lista_totales) > 100000:
+    Total = sum(lista_totales) * 0.9
+    print(f"Descuento aplicado (10%): -${int(sum(lista_totales)*0.1)}")
