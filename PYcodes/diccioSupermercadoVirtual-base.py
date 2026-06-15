@@ -38,9 +38,22 @@ def agregar_producto():
     - Validar mediante try-except que el precio sea un entero positivo.
     """
     print("\n➕ --- REGISTRAR NUEVO PRODUCTO ---")
+    while True:
+            codigo = input("Ingrese un codigo para registrar nuevo producto: ").upper().replace(" ","")
+            if codigo not in productos.items():
+                while True:
+                        nombre = input("Ingrese el nombre del producto: ").strip().lower()
+                        if nombre not in productos["nombre"].items():
+                            precio = float(input("Ingrese el precio del producto nuevo: $"))
+                            productos[codigo] = {"nombre": nombre, "precio": precio}
+                            break
+    ## ----------------------> TERMINAR ESTA FUNCION. REVISAR SI ESTA BIEN. nO TE HAGAI WN TOMÁS <-----------------------
+                        else: 
+                            print("Error: Este producto ya existe en la base de datos.")
+            else: 
+                print("Error: Este codigo ya existe en la base de datos.")
     # TODO: Capturar y validar el código.
     # TODO: Capturar nombre y precio (añadir try-except para el precio).
-    pass
 
 
 def modificar_producto():
