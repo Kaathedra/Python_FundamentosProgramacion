@@ -64,7 +64,7 @@ def modificar_personaje():
 
 # Bucle principal
 while True:
-    os.system("cls")  # Limpiar pantalla (solo en Windows)
+    os.system("cls" if os.name == "nt" else "clear")
     print(menu)
     opcion = input("Ingrese una opción: ")
 

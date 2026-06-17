@@ -47,7 +47,6 @@ def agregar_producto():
                             precio = float(input("Ingrese el precio del producto nuevo: $"))
                             productos[codigo] = {"nombre": nombre, "precio": precio}
                             break
-    ## ----------------------> TERMINAR ESTA FUNCION. REVISAR SI ESTA BIEN. nO TE HAGAI WN TOMÁS <-----------------------
                         else: 
                             print("Error: Este producto ya existe en la base de datos.")
             else: 
