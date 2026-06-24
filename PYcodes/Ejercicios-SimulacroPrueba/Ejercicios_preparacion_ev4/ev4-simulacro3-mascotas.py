@@ -154,15 +154,15 @@ def mostrar_mascotas(mascotas_list):
                 print("Nivel de atención: Prioritaria")
             else:
                 print("Nivel de atención: No prioritaria")
-            print("="*50)
+            print("="*47)
         print("="*15,"FIN DE LA LISTA","="*15)
 #=================================================#
 # Orquestador del programa
 def main():
     mascotas_list = []
     mascotas_list.extend(pets_presave)
-    print("Lista pregenerada cargada con exito")
-    input("Presiona [ENTER] para comenzar.")
+    print("\nLista pregenerada cargada con exito")
+    input("\nPresiona [ENTER] para comenzar.")
     while True:
         opcion = menu()
         if opcion == 1:
