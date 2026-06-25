@@ -112,16 +112,19 @@ def actualizar_disponibilidad(cursos_list):
 
 # Mostrar los cursos
 def mostrar_cursos(cursos_list):
-    for curso in cursos_list:
-        print(f'''
-    Nombre: {curso['nombre']}
-    Cupos: {curso['cupos']}
-    Precio: $ {curso['precio']}
-''')
-        if curso['disponibilidad']:
-            print("Estado: Disponible")
-        else:
-            print("Estado: No diponible")
+    if len(cursos_list) == 0:
+        print("No se han registrado cursos.")
+    else:
+        for curso in cursos_list:
+            print(f'''
+        Nombre: {curso['nombre']}
+        Cupos: {curso['cupos']}
+        Precio: $ {curso['precio']}
+    ''')
+            if curso['disponibilidad']:
+                print("Estado: Disponible")
+            else:
+                print("Estado: No diponible")
 
 # Director
 def main():
