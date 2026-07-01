@@ -152,6 +152,7 @@ def actualizar_dispo(talleres):
 def mostrar_talleres(talleres):
     if len(talleres) == 0:
         print(f"{"NO HAY TALLERES REGISTRADOS":^50}")
+        return
     for taller in talleres:
         print("="*60)
         print(f'''
